@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POP up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>POPUP PROMT METHOD</h1>
+    <p1>WELLCOME</p1></br>
+    <button onclick="confirm1()">Your name</button><br><br>
+    
+    <p2 id="va"></p2>
+    <script>
+        function confirm1(){
+            vaa=prompt("enter your name","")
+            {document.getElementById("va").innerHTML="Hello " +vaa + " How are you?";
+        } 
+        }
+    </script>
+</body>
+<body>
+    <h1>POPUP CONFIRM METHOD</h1>
+    <p22>ONCE AGAIN </P22><br><br>
+    <button onclick="thana()">policy request</button><br><br>
+    <p3 id="de"></p3>
+    <script>
+        function thana(){
+            var txt;
+            if(confirm("will you accept or reject")){
+                txt=(" you accepted the policy");
+            }
+            else{txt=("you rejected the policy");}
+            document.getElementById("de").innerHTML=txt;
+
+        }
+    </script>
+    </body>
+    <body>
+        <h1>ALERT POPUP</h1>
+        <P4> Alert </P4>
+        <button onclick="gan()">click for an alert</button><br><br>
+        <script>
+            function gan(){
+                alert("wellcome to great kirigalan magic show");
+            }
+        </script>
+    </body>
+</html>
